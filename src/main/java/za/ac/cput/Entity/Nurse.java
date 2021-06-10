@@ -11,7 +11,7 @@ public class Nurse {
     private String nurseID, nurseUsername, nursePassword, nurseName, nurseGender, nurseAddress;
     private int nurseAge, nurseContactNumber;
 
-    private Nurse(Builder builder) {
+    private Nurse(BuilderNurse builder) {
         this.nurseID = builder.nurseID;
         this.nurseUsername = builder.nurseUsername;
         this.nursePassword = builder.nursePassword;
@@ -37,47 +37,47 @@ public class Nurse {
                 '}';
     }
 
-    public static class Builder
+    public static class BuilderNurse
     {
         private String nurseID, nurseUsername, nursePassword, nurseName, nurseGender, nurseAddress;
         private int nurseAge, nurseContactNumber;
 
-        public Builder setNurseID(String nurseID) {
+        public BuilderNurse setNurseID(String nurseID) {
             this.nurseID = nurseID;
             return this;
         }
 
-        public Builder setNurseUsername(String nurseUsername) {
+        public BuilderNurse setNurseUsername(String nurseUsername) {
             this.nurseUsername = nurseUsername;
             return this;
         }
 
-        public Builder setNursePassword(String nursePassword) {
+        public BuilderNurse setNursePassword(String nursePassword) {
             this.nursePassword = nursePassword;
             return this;
         }
 
-        public Builder setNurseName(String nurseName) {
+        public BuilderNurse setNurseName(String nurseName) {
             this.nurseName = nurseName;
             return this;
         }
 
-        public Builder setNurseGender(String nurseGender) {
+        public BuilderNurse setNurseGender(String nurseGender) {
             this.nurseGender = nurseGender;
             return this;
         }
 
-        public Builder setNurseAddress(String nurseAddress) {
+        public BuilderNurse setNurseAddress(String nurseAddress) {
             this.nurseAddress = nurseAddress;
             return this;
         }
 
-        public Builder setNurseAge(int nurseAge) {
+        public BuilderNurse setNurseAge(int nurseAge) {
             this.nurseAge = nurseAge;
             return this;
         }
 
-        public Builder setNurseContactNumber(int nurseContactNumber) {
+        public BuilderNurse setNurseContactNumber(int nurseContactNumber) {
             this.nurseContactNumber = nurseContactNumber;
             return this;
         }
@@ -86,7 +86,7 @@ public class Nurse {
             return new Nurse(this);
         }
 
-        public Builder copy(Nurse nurse){
+        public BuilderNurse copy(Nurse nurse){
             this.nurseID = nurse.nurseID;
             this.nurseUsername = nurse.nurseUsername;
             this.nursePassword = nurse.nursePassword;

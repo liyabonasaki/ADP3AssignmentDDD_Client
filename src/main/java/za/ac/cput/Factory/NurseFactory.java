@@ -8,9 +8,8 @@ public class NurseFactory {
                                     String nurseGender, String nurseAddress, int nurseAge,
                                     int nurseContactNumber){
 
-
         String nurseId = GenericHelper.generateID();
-        Nurse nurse = new Nurse.Builder()
+        Nurse nurse = new Nurse.BuilderNurse()
                 .setNurseID(nurseId)
                 .setNurseUsername(nurseUsername)
                 .setNursePassword(nursePassword)
