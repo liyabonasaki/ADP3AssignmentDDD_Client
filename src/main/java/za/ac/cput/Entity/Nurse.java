@@ -1,4 +1,11 @@
+/* Nurse.java
+   Entity for the Nurse
+   @ author: Joshua Luke Retief (214234169)
+   Date: 10 June 20121
+ */
+
 package za.ac.cput.Entity;
+
 
 public class Nurse {
     private String nurseID, nurseUsername, nursePassword, nurseName, nurseGender, nurseAddress;
