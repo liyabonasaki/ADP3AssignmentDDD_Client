@@ -8,8 +8,9 @@ package za.ac.cput.Entity;
 
 
 public class Nurse {
-    private String nurseID, nurseUsername, nursePassword, nurseName, nurseGender, nurseAddress;
-    private int nurseAge, nurseContactNumber;
+    private String nurseID, nurseUsername, nursePassword, nurseName, nurseGender, nurseAddress,nurseContactNumber;
+    private int nurseAge;
+
 
     private Nurse(BuilderNurse builder) {
         this.nurseID = builder.nurseID;
@@ -39,8 +40,8 @@ public class Nurse {
 
     public static class BuilderNurse
     {
-        private String nurseID, nurseUsername, nursePassword, nurseName, nurseGender, nurseAddress;
-        private int nurseAge, nurseContactNumber;
+        private String nurseID, nurseUsername, nursePassword, nurseName, nurseGender, nurseAddress, nurseContactNumber;
+        private int nurseAge;
 
         public BuilderNurse setNurseID(String nurseID) {
             this.nurseID = nurseID;
@@ -77,12 +78,13 @@ public class Nurse {
             return this;
         }
 
-        public BuilderNurse setNurseContactNumber(int nurseContactNumber) {
+        public BuilderNurse setNurseContactNumber(String nurseContactNumber) {
             this.nurseContactNumber = nurseContactNumber;
             return this;
         }
 
-        public Nurse build(){
+        public Nurse build()
+        {
             return new Nurse(this);
         }
 
