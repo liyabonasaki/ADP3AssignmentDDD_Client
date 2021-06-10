@@ -21,7 +21,6 @@ public class Nurse {
         this.nurseAge = builder.nurseAge;
         this.nurseContactNumber = builder.nurseContactNumber;
 
-
     }
 
     @Override
@@ -99,7 +98,6 @@ public class Nurse {
 
             return this;
         }
-
 
     }
 }
