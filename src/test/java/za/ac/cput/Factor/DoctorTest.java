@@ -13,7 +13,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 import static org.junit.jupiter.api.Assertions.*;
 
-import za.ac.cput.Entity.Doctor;
+import za.ac.cput.Entity.*;
 
 import java.util.concurrent.TimeUnit;
 
