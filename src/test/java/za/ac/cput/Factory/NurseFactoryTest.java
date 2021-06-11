@@ -4,14 +4,14 @@
    Date: 10 June 2021
  */
 
-package za.ac.cput.factory;
+package za.ac.cput.Factory;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 import org.junit.jupiter.api.Assertions;
 import za.ac.cput.Entity.Nurse;
-import za.ac.cput.Factory.NurseFactory;
+
 import java.util.concurrent.TimeUnit;
 
 import static org.junit.jupiter.api.Assertions.*;
