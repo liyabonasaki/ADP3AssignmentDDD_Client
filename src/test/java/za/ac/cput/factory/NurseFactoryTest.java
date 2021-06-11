@@ -1,5 +1,5 @@
 /* Nurse.java
-   za.ac.cput.Entity for the Nurse
+   FactoryTest for the Nurse
    @ author: Joshua Luke Retief (214234169)
    Date: 10 June 2021
  */
@@ -10,11 +10,11 @@ import org.junit.jupiter.api.Test;
 import za.ac.cput.Entity.Nurse;
 import za.ac.cput.Factory.NurseFactory;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class NurseFactoryTest {
+
     @Test
-    public void createNurse(){
+    public void createNurse()
+    {
         Nurse nurse = NurseFactory.createNurse(
                 "joshluke95",
                 "jl95_1878",
@@ -26,5 +26,4 @@ class NurseFactoryTest {
 
         System.out.println(nurse);
     }
-
 }

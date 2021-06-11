@@ -1,5 +1,5 @@
 /* Nurse.java
-   za.ac.cput.Entity for the Nurse
+   Factory for the Nurse
    @ author: Joshua Luke Retief (214234169)
    Date: 10 June 2021
  */

@@ -1,18 +1,18 @@
 /* Nurse.java
-   za.ac.cput.Entity for the Nurse
+   Entity for the Nurse
    @ author: Joshua Luke Retief (214234169)
    Date: 10 June 2021
  */
 
 package za.ac.cput.Entity;
 
-
 public class Nurse {
     private String nurseID, nurseUsername, nursePassword, nurseName, nurseGender, nurseAddress,nurseContactNumber;
     private int nurseAge;
 
 
-    private Nurse(BuilderNurse builder) {
+    private Nurse(BuilderNurse builder)
+    {
         this.nurseID = builder.nurseID;
         this.nurseUsername = builder.nurseUsername;
         this.nursePassword = builder.nursePassword;
@@ -21,11 +21,11 @@ public class Nurse {
         this.nurseAddress = builder.nurseAddress;
         this.nurseAge = builder.nurseAge;
         this.nurseContactNumber = builder.nurseContactNumber;
-
     }
 
     @Override
-    public String toString() {
+    public String toString()
+    {
         return "Nurse{" +
                 "nurseID='" + nurseID + '\'' +
                 ", nurseUsername='" + nurseUsername + '\'' +
@@ -88,7 +88,8 @@ public class Nurse {
             return new Nurse(this);
         }
 
-        public BuilderNurse copy(Nurse nurse){
+        public BuilderNurse copy(Nurse nurse)
+        {
             this.nurseID = nurse.nurseID;
             this.nurseUsername = nurse.nurseUsername;
             this.nursePassword = nurse.nursePassword;
@@ -97,9 +98,8 @@ public class Nurse {
             this.nurseAddress = nurse.nurseAddress;
             this.nurseAge = nurse.nurseAge;
             this.nurseContactNumber = nurse.nurseContactNumber;
-
+            
             return this;
         }
-
     }
 }
