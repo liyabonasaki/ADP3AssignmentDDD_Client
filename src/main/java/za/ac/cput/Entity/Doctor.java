@@ -19,7 +19,7 @@ public class Doctor {
     private String username;
     private String password;
 
-    private Doctor(Builder builder) {
+    public Doctor(Builder builder) {
         this.id = builder.id;
         this.name = builder.name;
         this.lastname = builder.lastname;
@@ -29,6 +29,10 @@ public class Doctor {
         this.address = builder.address;
         this.username = builder.username;
         this.password = builder.password;
+
+    }
+
+    public Doctor() {
 
     }
 
