@@ -5,7 +5,7 @@ Author : Liyabona Saki (217120830)
 Date : 09 June 2021
  */
 
-package za.ac.cput.factory;
+package za.ac.cput.Factory;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
