@@ -79,7 +79,8 @@ public class Patient
     @Override
     public String toString()
     {
-        return "Builder{" +
+        return "Builder" +
+                "{" +
                 "patID=" + patID +
                 ", patFirstName='" + patFirstName + '\'' +
                 ", patLastName='" + patLastName + '\'' +
@@ -160,15 +161,15 @@ public class Patient
 
         public Builder copy (Patient patient)
         {
-            this.patID = patID;
-            this.patFirstName = patFirstName;
-            this.patLastName = patLastName;
-            this.patGender = patGender;
-            this.patAddress = patAddress;
-            this.patAge = patAge;
-            this.patContactNumber = patContactNumber;
-            this.patBloodType = patBloodType;
-            this.patCovidStatus = patCovidStatus;
+            this.patID = patient.patID;
+            this.patFirstName = patient.patFirstName;
+            this.patLastName = patient.patLastName;
+            this.patGender = patient.patGender;
+            this.patAddress = patient.patAddress;
+            this.patAge = patient.patAge;
+            this.patContactNumber = patient.patContactNumber;
+            this.patBloodType = patient.patBloodType;
+            this.patCovidStatus = patient.patCovidStatus;
 
             return this;
         }
