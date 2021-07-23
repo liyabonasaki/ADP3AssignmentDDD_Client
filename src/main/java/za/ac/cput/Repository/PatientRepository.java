@@ -1,7 +1,7 @@
-/* PatientFactory.java
- Class for the PatientFactory
+/* PatientRepository.java
+ Class for the PatientRepository
  Author: Bilqees Saban (219090866)
-  Date: 11 June 2021
+  Date: 24 July 2021
 */
 
 package za.ac.cput.Repository;
