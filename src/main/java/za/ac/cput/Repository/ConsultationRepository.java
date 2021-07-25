@@ -78,4 +78,9 @@ public class ConsultationRepository implements IConsultationRepository
         consultationDB.remove(consultationDelete);
         return true;
     }
+
+    public Set<Consultation> getAllConsultation()
+    {
+        return consultationDB;
+    }
 }
