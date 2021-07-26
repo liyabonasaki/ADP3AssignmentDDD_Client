@@ -4,7 +4,7 @@ import org.junit.jupiter.api.*;
 import za.ac.cput.Entity.Doctor;
 import za.ac.cput.Factory.DoctorFactory;
 import static org.junit.jupiter.api.Assertions.*;
-//@TestMethodOrder(MethodOrderer.MethodName.class)
+@TestMethodOrder(MethodOrderer.MethodName.class)
 
 class DoctorRepositoryTest {
 
@@ -14,7 +14,7 @@ class DoctorRepositoryTest {
             "d01","Liyabona","Saki",23,"male","078358874","Cape Town","root","master"
     );
 
-    private  Doctor doctor2 = DoctorFactory.createDoctor(
+    private static Doctor doctor2 = DoctorFactory.createDoctor(
             "d02","Emihle","Menzo",22,"female","078358874","Cape Town","mihle","mihle"
     );
 

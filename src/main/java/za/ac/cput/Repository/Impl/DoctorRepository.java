@@ -16,7 +16,7 @@ import java.util.Set;
 public class DoctorRepository implements IDoctorRepository {
 
     private static DoctorRepository repository = null;
-    private Set<Doctor> doctorDB; // data structure as our data store
+    private Set<Doctor> doctorDB = null;
 
     private DoctorRepository(){
 
@@ -78,8 +78,7 @@ public class DoctorRepository implements IDoctorRepository {
         return true;
     }
 
-    public Set<Doctor> getAllDoctor()
-    {
+    public Set<Doctor> getAllDoctor() {
         return doctorDB;
     }
 }
