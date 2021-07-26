@@ -1,6 +1,6 @@
 /*
 Doctor.java
-Entity for doctor
+IDoctorRepository for doctor
 Author : Liyabona Saki (217120830)
 Date : 24 July 2021
  */
