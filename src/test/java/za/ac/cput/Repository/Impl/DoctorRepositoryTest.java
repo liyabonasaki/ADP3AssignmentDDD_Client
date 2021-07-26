@@ -1,3 +1,10 @@
+/*
+Doctor.java
+DoctorRepository Test
+Author : Liyabona Saki (217120830)
+Date : 03 June 2021
+ */
+
 package za.ac.cput.Repository.Impl;
 
 import org.junit.jupiter.api.*;
