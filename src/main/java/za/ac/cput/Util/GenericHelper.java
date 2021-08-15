@@ -1,5 +1,6 @@
 /* Nurse.java
    Generate ID for the Nurse
+   Global ID Generator inherited in other classes
    @ author: Joshua Luke Retief (214234169)
    Date: 10 June 2021
  */
