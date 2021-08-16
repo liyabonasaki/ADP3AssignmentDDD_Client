@@ -1,3 +1,9 @@
+/* PatientControllerTest.java
+   Class for the PatientControllerTest
+   Author: Bilqees Saban (219090866)
+   Date: 13 August 2021
+ */
+
 package za.ac.cput.Controller;
 
 import org.junit.jupiter.api.MethodOrderer;
