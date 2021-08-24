@@ -7,7 +7,20 @@ import org.springframework.web.bind.annotation.RestController;
 
         @GetMapping("/")
         public String index() {
-            return "Welcome to Hospital Management System!";
+            return "<!DOCTYPE html>\n" +
+                    "<html>\n" +
+                    "<title>Restaurant Management System</title>\n" +
+                    "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n" +
+                    "<link rel=\"stylesheet\" href=\"https://www.w3schools.com/w3css/4/w3.css\">\n" +
+                    "<body>\n" +
+                    "\n" +
+                    "<div class=\"w3-container w3-center w3-animate-bottom\">\n" +
+                    "  <h1>The Treat Restaurant Management System!</h1>\n" +
+                    "  <p>Welcome to Restaurant Management System</p>\n" +
+                    "</div>\n" +
+                    "\n" +
+                    "</body>\n" +
+                    "</html>\n";
         }
 
 }

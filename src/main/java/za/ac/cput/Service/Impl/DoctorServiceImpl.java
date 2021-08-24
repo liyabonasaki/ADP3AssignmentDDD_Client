@@ -1,11 +1,16 @@
 package za.ac.cput.Service.Impl;
 
+import org.springframework.stereotype.Service;
 import za.ac.cput.Entity.Doctor;
 import za.ac.cput.Repository.Impl.DoctorRepository;
 
 import java.util.Set;
 
+//This is the old service
+@Deprecated
+@Service
 public class DoctorServiceImpl implements IDoctorService {
+
 
     private static DoctorServiceImpl service = null;
     private static DoctorRepository repository = null;
