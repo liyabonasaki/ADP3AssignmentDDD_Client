@@ -6,11 +6,13 @@
 
 package za.ac.cput.Service;
 
+import org.springframework.stereotype.Service;
 import za.ac.cput.Entity.Patient;
 import za.ac.cput.Repository.PatientRepository;
 
 import java.util.Set;
 
+@Service
 public class PatientService implements IPatientService
 {
     private static PatientService service = null;
