@@ -18,27 +18,11 @@ class DoctorRepositoryTest {
     private static DoctorRepository repository = DoctorRepository.getRepository();
 
     private static Doctor doctor1 = DoctorFactory.createDoctor(
-            "d01",
-            "Liyabona",
-            "Saki",
-            23,
-            "male",
-            "078358874",
-            "Cape Town",
-            "root",
-            "master"
+            "d01","Liyabona","Saki",23,"male","078358874","Cape Town","root","master"
     );
 
     private static Doctor doctor2 = DoctorFactory.createDoctor(
-            "d02",
-            "Emihle",
-            "Menzo",
-            22,
-            "female",
-            "078358874",
-            "Cape Town",
-            "mihle",
-            "mihle"
+            "d02","Emihle","Menzo",22,"female","078358874","Cape Town","mihle","mihle"
     );
 
 
@@ -52,6 +36,7 @@ class DoctorRepositoryTest {
 
         System.out.println("Create: " + created1);
         System.out.println("Create: " + created2);
+
 
     }
 
@@ -78,7 +63,6 @@ class DoctorRepositoryTest {
     }
 
     @Test
-    @Timeout(3)
     void delete() {
         System.out.println("================= Deleting objects =============== ");
         boolean success = repository.delete(doctor2.getId());
@@ -89,7 +73,6 @@ class DoctorRepositoryTest {
     }
 
     @Test
-    @Timeout(3)
     void getAllDoctor(){
 
         System.out.println("Show All:");
