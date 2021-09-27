@@ -1,3 +1,9 @@
+/*INurseService.java
+   Class for the Service
+   Author: Joshua Retief (214234169)
+   Date: 15 August 2021
+ */
+
 package za.ac.cput.Services;
 
 import za.ac.cput.Entity.Nurse;
