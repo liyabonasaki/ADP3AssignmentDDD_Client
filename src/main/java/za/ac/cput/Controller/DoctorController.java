@@ -46,7 +46,7 @@ public class DoctorController {
         return this.doctorService.update(doctor);
     }
 
-    @PostMapping("/delete")
+    @DeleteMapping("/delete")
     public boolean delete(@RequestBody Doctor doctor){
         return doctorService.delete(doctor.getId());
     }

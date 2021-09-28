@@ -1,5 +1,6 @@
 package za.ac.cput.Service.Impl;
 
+import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import za.ac.cput.Entity.Doctor;
 import za.ac.cput.Repository.Impl.DoctorRepository;
@@ -31,6 +32,7 @@ public class DoctorServiceImpl implements IDoctorService {
     public Doctor create(Doctor doctor) {
         return this.repository.create(doctor);
     }
+
 
     @Override
     public Doctor read(String id) {
