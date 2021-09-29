@@ -1,6 +1,7 @@
 package za.ac.cput.Service.Impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import za.ac.cput.Entity.Doctor;
 import za.ac.cput.Repository.Impl.DoctorRepositoryUpdated;
 
@@ -8,6 +9,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+@Service
 public class DoctorService implements IDoctorService {
 
     private static DoctorService service = null;
