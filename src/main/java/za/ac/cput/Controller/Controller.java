@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
         public String index() {
             return "<!DOCTYPE html>\n" +
                     "<html>\n" +
-                    "<title>Restaurant Management System</title>\n" +
+                    "<title>Hospital Management System</title>\n" +
                     "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n" +
                     "<link rel=\"stylesheet\" href=\"https://www.w3schools.com/w3css/4/w3.css\">\n" +
                     "<body>\n" +
