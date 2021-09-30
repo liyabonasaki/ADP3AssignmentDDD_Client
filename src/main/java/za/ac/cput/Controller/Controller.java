@@ -1,3 +1,4 @@
+
 /*Controller.java
    Class for the Controller
    Author: Joshua Retief (214234169)
@@ -17,4 +18,10 @@ public class Controller
     {
         return "Hospital Managament System";
     }
+
+
+
+
+
+
 }
