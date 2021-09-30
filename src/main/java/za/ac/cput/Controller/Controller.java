@@ -1,30 +1,11 @@
-
-/*Controller.java
-   Class for the Controller
-   Author: Joshua Retief (214234169)
-   Date: 15 August 2021
- */
-
 package za.ac.cput.Controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class Controller
-{
-    @GetMapping("/")
-    public String index()
-    {
-        return "Hospital Managament System";
-    }
+public class Controller {
 
-
-
-
-
-<<<<<<< HEAD
-=======
         @GetMapping("/")
         public String index() {
             return "<!DOCTYPE html>\n" +
@@ -42,6 +23,6 @@ public class Controller
                     "</body>\n" +
                     "</html>\n";
         }
->>>>>>> 217120830
+
 
 }
