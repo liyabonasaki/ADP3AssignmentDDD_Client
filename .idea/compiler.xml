@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="ADP3AssignmentDDD" target="8" />
+      <module name="ADP3AssignmentDDD" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
