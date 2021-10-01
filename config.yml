@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ########################################################
 # Author : Liyabona Saki
 #Description : Deployment script for pipeline
@@ -7,10 +6,10 @@
 ########################################################
 
 
-=======
+
 # Use the latest 2.1 version of CircleCI pipeline process engine. 
 # See: https://circleci.com/docs/2.0/configuration-reference
->>>>>>> 217120830
+
 version: 2.1
 
 jobs:
