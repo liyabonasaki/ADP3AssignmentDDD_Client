@@ -1,3 +1,9 @@
+/*
+Doctor.java
+Entity for doctor
+Author : Liyabona Saki (217120830)
+ */
+
 package za.ac.cput.Service.Impl;
 
 import org.springframework.beans.factory.annotation.Autowired;

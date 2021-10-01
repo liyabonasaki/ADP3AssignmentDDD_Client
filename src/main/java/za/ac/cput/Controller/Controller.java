@@ -16,8 +16,8 @@ public class Controller {
                     "<body>\n" +
                     "\n" +
                     "<div class=\"w3-container w3-center w3-animate-bottom\">\n" +
-                    "  <h1>The Treat Restaurant Management System!</h1>\n" +
-                    "  <p>Welcome to Restaurant Management System</p>\n" +
+                    "  <h1>The Treat Hospital Management System!</h1>\n" +
+                    "  <p>Welcome to Hospital Management System</p>\n" +
                     "</div>\n" +
                     "\n" +
                     "</body>\n" +

@@ -1,3 +1,12 @@
+/*
+Doctor.java
+Entity for doctor
+Author : Liyabona Saki (217120830)
+
+ */
+
+
+
 /* Style the header with a grey background and some padding */
 .header {
   overflow: hidden;
@@ -6,6 +15,8 @@
 }
 
 /* Style the header links */
+
+
 .header a {
   float: left;
   color: black;
