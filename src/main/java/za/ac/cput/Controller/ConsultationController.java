@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import za.ac.cput.Entity.Consultation;
 import za.ac.cput.Factory.ConsultationFactory;
 import za.ac.cput.Service.ConsultationService;
+import za.ac.cput.Service.PatientService;
 
 import java.util.Set;
 
@@ -18,12 +19,10 @@ import java.util.Set;
 @RequestMapping("/consultation")
 public class ConsultationController {
 
-    /**
-     *
-     */
     @Autowired
     private ConsultationService consultationService;
 
+    //@RequestMapping(value = "/create", method = RequestMethod.POST)
 
     @PostMapping("/create")
     public Consultation create (@RequestBody Consultation consultation)
