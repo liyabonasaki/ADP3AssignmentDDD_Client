@@ -11,8 +11,6 @@ function RUNNING_CHECK() {
 
 }
 
-
-
 #for new systems that dont have java or maven installed, these commands should install maven for dependancy management
 function INSTALL_MAVEN() {
     sudo apt update;
