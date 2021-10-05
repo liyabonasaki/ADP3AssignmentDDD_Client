@@ -1,4 +1,11 @@
 #!/bin/sh
+
+# Author : Liyabona Saki
+# Version : 1.0
+# Descr    : script to check the code before going to CI
+#
+# Notes : to add running checks
+
 set -e
 
 # Workaround old docker images with incorrect $HOME
