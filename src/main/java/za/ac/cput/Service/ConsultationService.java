@@ -7,12 +7,14 @@ Date: 11 August 2021
 
 package za.ac.cput.Service;
 
+import org.springframework.stereotype.Service;
 import za.ac.cput.Entity.Consultation;
 import za.ac.cput.Repository.ConsultationRepository;
 import za.ac.cput.Repository.IConsultationRepository;
 
 import java.util.Set;
 
+@Service
 public class ConsultationService implements IConsultationRepository {
 
     private static ConsultationService service = null;
