@@ -4,7 +4,7 @@
    Date: 15 August 2021
  */
 
-package za.ac.cput.Services;
+package za.ac.cput.Service;
 
 import org.springframework.stereotype.Service;
 import za.ac.cput.Entity.Nurse;
