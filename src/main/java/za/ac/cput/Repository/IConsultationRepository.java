@@ -7,6 +7,7 @@ Date: 24 July 2021
 package za.ac.cput.Repository;
 
 import za.ac.cput.Entity.Consultation;
+import za.ac.cput.Repository.IRepository;
 
 public interface IConsultationRepository extends IRepository<Consultation,String>
 {

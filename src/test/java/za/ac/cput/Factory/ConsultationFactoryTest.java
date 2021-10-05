@@ -3,8 +3,8 @@ package za.ac.cput.Factory;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 import za.ac.cput.Entity.Consultation;
-import za.ac.cput.Entity.Doctor;
-import za.ac.cput.Entity.Patient;
+import za.ac.cput.Factory.ConsultationFactory;
+
 
 import java.util.concurrent.TimeUnit;
 
@@ -16,9 +16,9 @@ class ConsultationFactoryTest {
     private Consultation consultation2;
 
     {
-        consultation1 = ConsultationFactory.createConsultation("12 June 2021", "Covid 19 test: Negative");
+        consultation1 = ConsultationFactory.createConsultation("021", "21 June 2021", "Covid 19 test: Negative");
 
-        consultation2 = ConsultationFactory.createConsultation("01 July 2021", "High Blood Pressure");
+        consultation2 = ConsultationFactory.createConsultation("456", "01 July 2021", "High Blood Pressure");
 
         consultation2 = consultation1;
 
@@ -43,7 +43,7 @@ class ConsultationFactoryTest {
     {
         assertEquals(consultation1, consultation2);
     }
-    
+
 
 
 }

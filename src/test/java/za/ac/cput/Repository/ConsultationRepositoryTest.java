@@ -1,22 +1,22 @@
+
 package za.ac.cput.Repository;
 
 import org.junit.jupiter.api.Test;
 import za.ac.cput.Entity.Consultation;
-import za.ac.cput.Entity.Patient;
 import za.ac.cput.Factory.ConsultationFactory;
-import za.ac.cput.Factory.PatientFactory;
+import za.ac.cput.Repository.ConsultationRepository;
+
 
 import static org.junit.jupiter.api.Assertions.*;
-import static za.ac.cput.Factory.ConsultationFactory.createConsultation;
 
 class ConsultationRepositoryTest {
 
     private static ConsultationRepository repository = ConsultationRepository.getRepository();
-   // private static Consultation consultation= createConsultation();
+    // private static Consultation consultation= createConsultation();
 
-    private static Consultation consultation = ConsultationFactory.createConsultation("12 June 2021", "Covid 19 Test Results");
+    private static Consultation consultation = ConsultationFactory.createConsultation("852", "12 June 2021","Covid 19 Test Results");
 
-    private static Consultation consultation2 = ConsultationFactory.createConsultation("21 June 2021", "Pap Smear Test Reults");
+    private static Consultation consultation2 = ConsultationFactory.createConsultation("357", "21 June 2021", "Pap Smear Test Results");
 
 
     @Test

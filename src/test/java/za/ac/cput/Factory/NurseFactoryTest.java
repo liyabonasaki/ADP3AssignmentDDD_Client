@@ -21,18 +21,20 @@ class NurseFactoryTest {
     @Test
     public void createNurse()
     {
-
-    Nurse nurse = NurseFactory.createNurse(
-            "joshluke95",
-            "jl95_1878",
-            "Joshua Retief",
-            "Male",
-            "212 CWI 7654",
-            "0645432156",
-            26);
-
+        Nurse nurse = NurseFactory.createNurse
+                (
+                        "950501",
+                        "joshluke95",
+                        "jl95_1878",
+                        "Joshua Retief",
+                        "Male",
+                        "212 CWI 7654",
+                        "0645432156",
+                        26
+                );
         System.out.println(nurse);
     }
+
 
    private Nurse.BuilderNurse build1;
    private Nurse.BuilderNurse build2;
@@ -70,6 +72,7 @@ class NurseFactoryTest {
        try {
            TimeUnit.SECONDS.sleep(4);
            if (build1 != null) {
+           build1.setNurseID("950501");
            build1.setNurseUsername("joshluke95");
            build1.setNursePassword("jl95_1878");
            build1.setNurseName("Joshua Retief");

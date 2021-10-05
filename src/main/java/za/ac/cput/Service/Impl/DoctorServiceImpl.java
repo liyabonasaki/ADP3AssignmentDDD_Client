@@ -1,11 +1,27 @@
+/*
+Doctor.java
+Entity for doctor
+Author : Liyabona Saki (217120830)
+ */
+
 package za.ac.cput.Service.Impl;
 
+
+import org.springframework.stereotype.Repository;
+
+import org.springframework.stereotype.Service;
 import za.ac.cput.Entity.Doctor;
 import za.ac.cput.Repository.Impl.DoctorRepository;
 
 import java.util.Set;
 
+
+
+//This is the old service
+@Deprecated
+@Service
 public class DoctorServiceImpl implements IDoctorService {
+
 
     private static DoctorServiceImpl service = null;
     private static DoctorRepository repository = null;
@@ -26,6 +42,7 @@ public class DoctorServiceImpl implements IDoctorService {
     public Doctor create(Doctor doctor) {
         return this.repository.create(doctor);
     }
+
 
     @Override
     public Doctor read(String id) {

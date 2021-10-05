@@ -24,12 +24,12 @@ public class ConsultationRepository implements IConsultationRepository
     }
 
     public static ConsultationRepository getRepository(){
-            if (repository == null)
-            {
-                repository = new ConsultationRepository();
-            }
-            return repository;
+        if (repository == null)
+        {
+            repository = new ConsultationRepository();
         }
+        return repository;
+    }
 
 
     @Override
