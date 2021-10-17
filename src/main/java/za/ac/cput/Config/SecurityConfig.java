@@ -7,19 +7,35 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
+   
     @Override
-    protected void configure(HttpSecurity http) throws Exception {
-        http
+    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+     auth.inMemoryAuthentication()
+             .withUser("admin")
+             .password("{noop}12345")
+             .roles("ADMIN")
+             .and()
+             .withUser("client")
+             .password("{noop}54321")
+             .roles("USER");
+
+    }
+
+    @Override
+    protected  void configure(HttpSecurity http) throws  Exception{
+//        super.configure(http);
+
+        http.httpBasic()
+                .and()
                 .authorizeRequests()
-                .antMatchers("/resources/**").permitAll()
-                .anyRequest().authenticated()
+                .antMatchers(HttpMethod.POST,"**/create").hasRole("ADMIN")
+                .antMatchers(HttpMethod.DELETE,"**/delete").hasRole("ADMIN")
+                .antMatchers(HttpMethod.POST, "**/update").hasRole("USER")
+                .antMatchers(HttpMethod.GET, "**/getAll").hasAnyRole("ADMIN","USER")
                 .and()
-                .formLogin()
-                .loginPage("/login")
-                .permitAll()
-                .and()
-                .logout()
-                .permitAll();
+                .csrf().disable()
+                .formLogin().disable();
+
 
     }
 
